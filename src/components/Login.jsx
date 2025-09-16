@@ -51,7 +51,7 @@ function Login() {
 
         <form onSubmit={handleSubmit(login)} className='mt-8'>
             <div className="space-y-5">
-                <input type="email" label ="Email :" placeholder="Please enter email" 
+                <Input type="email" label ="Email :" placeholder="Please enter email" 
                 {...register("email", {
                     required : true,
                     validate : {
@@ -59,12 +59,12 @@ function Login() {
                         "Email address must be a valid address",
                     }
                 })}/>
-                <input type="password" placeholder="Enter password" label="Password :" 
+                <Input type="password" placeholder="Enter password" label="Password :" 
                     {...register("password", {
                         required: true,
                     })}
                 />
-                <button type="submit"  className="w-full">Sign in</button>
+                <Button type="submit"  className="w-full">Sign in</Button>
             </div>
         </form>
       </div>
